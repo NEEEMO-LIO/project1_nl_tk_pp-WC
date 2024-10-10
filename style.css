@@ -235,3 +235,112 @@ body {
         margin-right: 60%;
     }
 }
+
+
+/*About*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+}
+
+.hero-image {
+    background-image: url('images/about-us-hero.jpeg'); /* Replace with the image of the pool */
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Philosophy Section */
+.philosophy-section {
+    /*background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url('images/about-our-philosophy-bg.jpeg');*/
+    background:url('images/about-our-philosophy-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+.philosophy-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.philosophy-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Job Section */
+.job-section {
+    background: url('images/about-we-do-a-pretty-good-job-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+.job-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.job-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.job-section .link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.job-section .link:hover {
+    text-decoration: underline;
+}
