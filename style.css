@@ -79,7 +79,7 @@ body {
 
 .features-section {
     margin-top: 5%;
-    background: url('images/home-hands-on-teaching.jpeg') no-repeat center center; /* Add your image path here */
+    background: url('images/home-hands-on-teaching.jpeg') no-repeat center center;
     background-size: cover; /* Ensures the image covers the entire section */
     padding: 100px 0; /* Adjust padding as needed for spacing */
     position: relative;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 .hero-image {
-    background-image: url('images/about-us-hero.jpeg'); /* Replace with the image of the pool */
+    background-image: url('images/about-us-hero.jpeg'); 
     height: 500px;
     background-position: center;
     background-size: cover;
@@ -345,125 +345,173 @@ a:hover {
     text-decoration: underline;
 }
 
-/*Sign-In Page*/
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height: 100vh;
-}
-.spl-wave {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: 10;
-}
-.spl-wave img {
-    max-width: 300px;
-    height: auto;
-}
-.main-content {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 100%; 
-    padding: 20px;
-    margin-top: 60px;
-    box-sizing: border-box; 
-    
-}
-.signin {
-    background-color: white;
-    padding: 40px;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.344);
-    width: 100%;
-    max-width: 50%;
+/* Adult Programs Section */
+.lapswimming-image {
+    background-image: url('images/lap-swimming.jpeg'); 
+    height: 500px;
+    background-position: center;
+    background-size: cover;
     position: relative;
+}
+
+.title-section h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-section p {
+    width: 75%; 
     margin: 0 auto; 
+    padding: 0 10px; 
+    text-align: left; 
+    margin-bottom: 20px; 
 }
-.shark-full {
-    position: absolute;
-    left: -80px;
-    top: -50px;
-    width: 150px;
-    z-index: 1;
-    scale: 70%;
+
+.title-section h3 {
+    font-size: 1.0rem; 
+    font-weight: bold;
+    width: 75%;
+    margin-left: 13.1%;
 }
-h1 {
+
+.title-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto; 
+    padding-left: 5px; 
+    margin-left: 13%;
+    margin-top: 0;
+}
+
+.title-section ul li {
+    margin: 10px 0; 
+}
+
+.title-section ul li a {
+    text-decoration: underline; 
+    color: #2097d3;
+}
+
+/* Swim Programs */
+.swimprograms-image {
+    background-image: url('images/summer-swim-camps.jpeg'); 
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.swimprograms-section h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
     text-align: center;
-    color: #333;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-size:35px;
+    margin-bottom: 40px;
 }
-form {
+
+.swimprograms-section p {
+    width: 75%; 
+    margin: 0 auto; 
+    padding: 0 10px; 
+    text-align: left; 
+    margin-bottom: 20px; 
+}
+
+.swimprograms-section h3 {
+    font-size: 1.0rem; 
+    font-weight: bold;
+    width: 75%;
+    margin-left: 13.1%;
+}
+
+.swimprograms-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto; 
+    padding-left: 5px; 
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+.swimprograms-section ul li {
+    margin: 10px 0; 
+}
+
+.swimprograms-section ul li a {
+    text-decoration: underline; 
+    color: #2097d3;
+}
+
+/* Contact Us */
+.contactus-image {
+    background-image: url('images/contact-hero.jpeg'); 
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contactus-section {
     display: flex;
-    flex-direction: column;
-    margin-top: -30px;
+    justify-content: center;
+    align-items: center;     
+    padding-top: 3%;
 }
-label {
-    margin-top: 10px;
-    color: #ff4081;
-    font-size: 16px;
-    padding-top: 1em;
+
+.contactus-section p {
+    font-size: 1.0rem;
+    max-width: 550px;
+    text-align: center;      
+    margin: 0 auto;   
+    margin-bottom: 70px;    
 }
-input {
-    padding: 10px;
-    margin-top: 5px;
-    border: none;
-    border-radius: 4px;
-    background-color: #e6e6e6;
-    width:100%;
-    height:40px;
-    box-sizing: border-box;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); 
-    transition: box-shadow 0.3s ease; 
+
+/* CSS for the Contact Page Icons */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust number of columns */
+    gap: 25px; /* Reduced gap slightly */
+    padding: 20px;
+    text-align: center;
 }
-.forgot-password {
-    text-align: right;
-    margin-top: 10px;
+
+.icon-card {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 0; 
+    transition: transform 0.3s ease;
 }
-.forgot-password a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-size: 12px;
-    text-decoration: underline;
+
+.icon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+
+/* Ensuring images are square-shaped */
+.icon-card img {
     width: 100%;
+    aspect-ratio: 1 / 1; /* Ensures a square aspect ratio */
+    object-fit: cover; /* Ensures image fits without distortion */
+    margin-bottom: 10px;
 }
-.btn {
-    padding: 10px 0; 
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 14px;
-    height: 40px; 
-    width: 48%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
+
+.icon-card a {
+    display: block;
+    font-size: 16px;
+    text-decoration: underline; 
+    color: #2097d3;
 }
-.btn-signin {
-    background-color: #e0f7fa;
-    color: #00bcd4;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icon-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
-.btn-signup {
-    background-color: white;
-    color: #00bcd4;
-    border: 2px solid #00bcd4;
+
+@media (max-width: 480px) {
+    .icon-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
