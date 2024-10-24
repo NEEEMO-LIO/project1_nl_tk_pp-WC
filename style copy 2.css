@@ -4,10 +4,6 @@ body {
     background-color: white;
 }
 
-h1 {
-    font-family: 'Bodoni Moda', serif;
-    font-weight: bold;
-}
 .navbar {
     background-color: rgba(26, 46, 56, 0.85); /* Transparent effect */
     z-index: 10;
@@ -180,6 +176,18 @@ h1 {
     margin-bottom: 20px;
 }
 
+.footer {
+    background-color: #1A2E38;
+    color: white;
+    padding: 30px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
 .text-align {
     position: absolute;
     text-align: center;
@@ -271,7 +279,6 @@ h1 {
 .philosophy-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-family: 'Bodoni Moda', serif;
 }
 
 .philosophy-section p {
@@ -413,8 +420,7 @@ h1 {
 /* Contact Us */
 .contactus-image {
     background-image: url('images/contact-hero.jpeg'); 
-    height: auto;
-    width: 20%;
+    height: 500px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -449,7 +455,6 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 0; 
     transition: transform 0.3s ease;
-    width: 50%;
 }
 
 .icon-card:hover {
@@ -712,11 +717,42 @@ h1 {
     margin-bottom: 20px; 
 }
 
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px; 
+}
+
 .swimlessons-section {
     background-color: #fff;
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 1em;
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+
+}
+
+a {
+    color: #00bbff;
+    text-decoration: underline;
 }
 
 .learn-more {
