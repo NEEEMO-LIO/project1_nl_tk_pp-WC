@@ -142,7 +142,6 @@ h1 {
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
-    margin-left: 80px;
 }
 
 .btn-primary:hover {
@@ -855,6 +854,7 @@ margin-bottom: 10px;
 .location-group ul li {
     margin-bottom: 6px; /* decrease the line height */
     width: 100%;
+    font-weight: lighter;
 }
 
 .location-group ul li:last-child {
