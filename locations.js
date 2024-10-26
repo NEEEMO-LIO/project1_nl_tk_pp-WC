@@ -1,13 +1,28 @@
-document.getElementById('locationsMenuLink').addEventListener('click', function(event) {
-    event.preventDefault();  // Prevent the default link behavior
-    var locationsSection = document.getElementById('locationsSection');
+document.addEventListener('DOMContentLoaded', function() {
+    const locationNav = document.querySelector('.nav-item:has(a[href="#"])');
+    const locationLink = locationNav.querySelector('.nav-link');
+    let isOpen = false;
 
-    // Toggle visibility and class to control styles
-    if (locationsSection.style.display === 'none' || locationsSection.style.display === '') {
-        locationsSection.style.display = 'block';
-        locationsSection.classList.add('show');  
-    } else {
-        locationsSection.style.display = 'none';
-        locationsSection.classList.remove('show'); 
-    }
+    // 处理点击事件
+    locationLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (!isOpen) {
+            // 关闭其他可能打开的下拉菜单
+            document.querySelectorAll('.nav-item.active').forEach(item => {
+                if (item !== locationNav) {
+                    item.classList.remove('active');
+                }
+            });
+        }
+        locationNav.classList.toggle('active');
+        isOpen = !isOpen;
+    });
+
+    // 点击页面其他地方关闭下拉菜单
+    document.addEventListener('click', function(e) {
+        if (!locationNav.contains(e.target)) {
+            locationNav.classList.remove('active');
+            isOpen = false;
+        }
+    });
 });

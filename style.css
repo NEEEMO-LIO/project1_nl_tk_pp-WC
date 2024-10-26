@@ -19,6 +19,7 @@ h1 {
 
 .navbar-brand img {
     max-height: 80px;
+    margin-left: -30px;
 }
 
 .navbar-nav .nav-link {
@@ -59,13 +60,12 @@ h1 {
     position: relative;
 }
 
-.hero h1 {
+.hero h1{
     margin-top: 20%;
     color: white;
     font-family: 'Bodoni Moda', serif;
     font-size: 4rem;
     font-weight: bold;
-   /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);*/
 }
 
 .hero .btn {
@@ -73,6 +73,10 @@ h1 {
     border-radius: 30px;
     font-size: 1.2rem;
     padding: 10px 30px;
+}
+
+.hero-text h1, .container h1 {
+    text-shadow: 2px 2px 5px rgba(124, 124, 124, 0.7);
 }
 
 .btn-primary {
@@ -130,18 +134,29 @@ h1 {
     text-decoration: underline;
 }
 
+
+
 .btn-primary {
     background-color: #03B1F4;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 10px 20px;
+    margin-left: 80px;
 }
 
 .btn-primary:hover {
     background-color: #0278D4;
 }
 
+.nav-item{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.nav-item .btn{
+    font-size: 14px;
+}
 
 .locations-section {
     position: relative;
@@ -521,7 +536,7 @@ h1 {
     .social-icons {
         margin-top: 20px;
     }
-
+    /*footer locations*/
     .locations {
         flex-direction: column;
         align-items: center;
@@ -599,6 +614,7 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    padding-top: 20px;
 }
 
 .logo-container{
@@ -650,7 +666,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px; /* 稍微减小图标的大小 */
+    width: 30px; 
     height: 30px;
     border-radius: 50%;
     color: white;
@@ -671,6 +687,15 @@ h1 {
     width: 85%; 
 }
 
+.copyright {
+    font-size: 0.7em;
+    color: #666;
+    font-family: open-sans regular;
+}
+
+
+
+/*Footer Location*/
 .locations-wrapper {
     width: 80%;
     max-width: 960px;
@@ -706,6 +731,8 @@ h1 {
     font-size:12px;
 }
 
+
+/*Sponsors*/
 .sponsors-copyright-container {
     display: flex;
     justify-content: space-between;
@@ -723,11 +750,6 @@ h1 {
     margin: 0 10px;
 }
 
-.copyright {
-    font-size: 0.7em;
-    color: #666;
-    font-family: open-sans regular;
-}
 
 
 /* Swim lessons */
@@ -781,72 +803,90 @@ margin-bottom: 10px;
     margin-bottom: 20px; 
 }
 
-/* Locations */
-.locations-section {
-    position: relative; /* Make sure the parent is positioned */
-    top: -30px; /* Move it up */
-    padding: 40px 20px;
-    background-color: #f9f9f9; /* default background */
-    transition: margin-top 0.3s ease, background-color 0.3s ease; /* Smooth transition for margin and background */
+/* NAV Locations */
+/* location nav-item: add active mode */
+.nav-item.active .locations-content {
+    display: block;
 }
 
-.locations-section .container {
-    max-width: 1200px;
+/* Locations dropdown styles */
+.nav-link + .locations-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95vw;
+    max-width: 1400px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+    z-index: 1000;
+}
+
+/* Grid layout */
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
     margin: 0 auto;
 }
 
-.locations-section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 36px;
-    color: #333;
-}
-
-.locations-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
+/* Location group styles */
 .location-group {
-    width: 30%; /* Adjust this based on how many columns you want */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* decrease the distance */
 }
 
 .location-group h3 {
-    font-size: 24px;
-    color: hsl(0, 0%, 5%);
-    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px; /* decrease the line height */
+    white-space: nowrap;
+    width: 100%;
 }
 
 .location-group ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .location-group ul li {
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* decrease the line height */
+    width: 100%;
+}
+
+.location-group ul li:last-child {
+    margin-bottom: 0;
 }
 
 .location-group ul li a {
+    color: #00a0dc;
     text-decoration: none;
-    color: #00c8ff; /* Link color */
+    font-size: 14px;
+    transition: color 0.2s ease;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .location-group ul li a:hover {
-    text-decoration: underline;
+    color: #0056b3;
 }
 
-#locationsSection {
-    display: none; /* Initially hide the locations section */
-}
-
-.white-background {
-    background-color: white !important; /* Forces the background to be white */
-}
-
-/* Show class to apply white background and move links up */
-.locations-section.show {
-    background-color: white !important; /* Turns white when visible */
-    margin-top: -80px; /* Moves the section up slightly */
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .nav-link + .locations-content {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        transform: none;
+        left: 0;
+    }
+    
+    .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

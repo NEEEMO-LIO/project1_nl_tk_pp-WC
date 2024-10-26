@@ -33,8 +33,73 @@
                     <li class="nav-item">
                         <a class="nav-link" href="adultprograms.html">Adult Programs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locations.html">Locations</a>
+                    <li class="nav-item locations-dropdown">
+                        <a class="nav-link" href="#">Locations</a>
+                        <div class="locations-content">
+                            <div class="locations-grid">
+                                <div class="location-group">
+                                    <h3>Orange County</h3>
+                                    <ul>
+                                        <li><a href="#">Anaheim Hills @ LA Fitness</a></li>
+                                        <li><a href="#">Huntington Beach</a></li>
+                                        <li><a href="#">Irvine</a></li>
+                                        <li><a href="#">Yorba Linda @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>San Diego County</h3>
+                                    <ul>
+                                        <li><a href="#">Carlsbad</a></li>
+                                        <li><a href="#">Poway @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>San Francisco</h3>
+                                    <ul>
+                                        <li><a href="#">San Francisco-20th Avenue @ City Sports Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>San Gabriel Valley</h3>
+                                    <ul>
+                                        <li><a href="#">Alhambra-Fremont @ LA Fitness</a></li>
+                                        <li><a href="#">Arcadia @ LA Fitness</a></li>
+                                        <li><a href="#">Diamond Bar @ LA Fitness</a></li>
+                                        <li><a href="#">Pasadena</a></li>
+                                        <li><a href="#">West Covina @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>Los Angeles County</h3>
+                                    <ul>
+                                        <li><a href="#">Culver City @ LA Fitness</a></li>
+                                        <li><a href="#">Harbor City @ LA Fitness</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>Silicon Valley</h3>
+                                    <ul>
+                                        <li><a href="#">North San Jose @ City Sports Club</a></li>
+                                        <li><a href="#">San Jose-Almaden @ City Sports Club</a></li>
+                                        <li><a href="#">San Jose-Bascom</a></li>
+                                        <li><a href="#">San Jose-Blossom Hill @ City Sports Club</a></li>
+                                        <li><a href="#">Sunnyvale @ City Sports Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>Alameda County</h3>
+                                    <ul>
+                                        <li><a href="#">Hayward @ City Sports Club</a></li>
+                                    </ul>
+                                </div>
+                                <div class="location-group">
+                                    <h3>Denver</h3>
+                                    <ul>
+                                        <li><a href="#">Highlands Ranch</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html">Contact Us</a>
@@ -46,6 +111,8 @@
             </div>
         </div>
     </nav>
+
+
 
     <!-- Hero Section -->
     <section class="hero">
@@ -80,7 +147,7 @@
             <p>
                 Select locations also offer additional swim programs such as swim competitions, swim teams, water aerobics, aquatic therapy, swim camps, and more! To learn more about the Waterworks Family Swim School near you, select a location below.
             </p>
-            <a href="#" class="btn btn-primary">Register Now</a>
+            <a href="signin.html" class="btn btn-primary">REGISTER NOW</a>
         </div>
     </div>
 </section>
@@ -94,7 +161,7 @@
         <h1>Find a Splashes Swim School near you</h1>
         <h3>Family Swim School Locations</h3>
         <p>Splashes offers the finest professional swimming lessons from 21 swim schools and aquatic centers in California and Denver.</p>
-        <a href="#" class="btn btn-primary">Find a Location Near You</a>
+        <a href="locations.html" class="btn btn-primary">Find a Location Near You</a>
     </div>
 </section>
 
@@ -160,7 +227,7 @@
         <div class="nav-social-container">
             <nav class="footer-nav">
                 <a href="about.html">About</a>
-                <a href="#">Locations</a>
+                <a href="locations.html">Locations</a>
                 <a href="#">FAQs</a>
                 <a href="contactus.html">Contact</a>
                 <a href="signin.html">Register / Sign In</a>
@@ -262,5 +329,8 @@
         // Mount the Vue app to the #app div
         app.mount('#app');
     </script>
+
+     <!-- NAV Location Tab -->
+     <script src="locations.js"></script>
 </body>
 </html>
