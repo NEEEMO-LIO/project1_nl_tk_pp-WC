@@ -75,8 +75,8 @@ h1 {
     padding: 10px 30px;
 }
 
-.hero-text h1, .container h1 {
-    text-shadow: 2px 2px 5px rgba(124, 124, 124, 0.7);
+.hero-text h1, .container1 h1 {
+    text-shadow: 2px 2px 5px rgba(105, 105, 105, 0.7);
 }
 
 .btn-primary {
